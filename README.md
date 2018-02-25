@@ -46,3 +46,17 @@ ElasticNetで処理できるように、ｎumpyのarrayを作成します
 ```console
 $ python3 make-sparse.py --step2
 ```
+
+## パラメータの探索と、学習
+ResNetは結構動かすパラメータが多いのですが、グリッドサーチし易いので、αとl1の大きさを可変にしてGrid Searchを行います  
+testデータでの誤差を最小化するパラメタがモデルに記されます  
+```console
+$ python3 elasticnet.py 
+```
+(48GByteのメモリのマシンでギリギリです)  
+mean absolute errorを計算することでモデルの汎化性能を見ます  
+```console
+mae=00000065.696695865_alpha=0.1000_l1_ratio=0.2000
+```
+このときmae(mean absolute error)が65万円で65万ぐらいはずれるけどだいたい行けたって感じです  
+
