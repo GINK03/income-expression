@@ -14,3 +14,15 @@ ElasticNetを利用します。単語ごとに重みをつけるBag of Wordsを�
 
 精度自体はさほどではないですが、解釈性がよいので、見通しが立てやすく、LassoとRidgeの双方の正則化項を利用します(ゴミみたいな情報が多いので正則化項は重要です)  
 
+予想精度自体はGBMやDeep Learningのほうが当然いいのですが、解釈を求めていきます  
+
+
+## コーパスの作成
+コーパスは、[別プロジェクトのスクレイパー](https://github.com/GINK03/scraping-designs/tree/master/doda-scrape)の機能を利用します  
+
+```console
+$ git clone https://github.com/GINK03/scraping-designs/
+$ cd scraping-designs
+$ cd doda-scrape
+$ python3 scrape.py
+```
