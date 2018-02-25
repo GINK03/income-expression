@@ -144,6 +144,8 @@ PC -6.195164512902161
 $ python3 50-verb-pair.py
 ```
 <div align="center">  
-  <img width="400px" src="https://user-images.githubusercontent.com/4949982/36642780-9a1bed12-1a87-11e8-971e-184b87d3b914.png">
+  <img width="500px" src="https://user-images.githubusercontent.com/4949982/36642780-9a1bed12-1a87-11e8-971e-184b87d3b914.png">
 </div>
+大阪やばいっすね。一人だけ左側にずれています。  
+
 
