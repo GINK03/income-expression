@@ -26,3 +26,23 @@ $ cd scraping-designs
 $ cd doda-scrape
 $ python3 scrape.py
 ```
+
+## HTMLの解析
+年収が記述されたフィールドは固定的なので、正規表現等を用いて抜き出すことが可能です  
+```console
+$ python3 10-scan.py
+(testというディレクトリに必要な要素が記されます)
+```
+
+## 分かち書きと、データセットの作成
+今回は表現に単語とその出現回数を用いてベクトルを構築して、予想しようと思います  
+
+最初のステップとして単語ごとにidを振ります
+```console
+$ python3 make-sparse.py --step1
+```
+
+ElasticNetで処理できるように、ｎumpyのarrayを作成します
+```console
+$ python3 make-sparse.py --step2
+```
